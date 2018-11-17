@@ -49,8 +49,4 @@ public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetSe
         return super.findById(id);
     }
 
-    @Override
-    public Vet findByLastName(String lastName) {
-        return null;
-    }
 }
