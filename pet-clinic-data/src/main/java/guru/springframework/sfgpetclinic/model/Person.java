@@ -18,6 +18,12 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class Person extends BaseEntity{
 
+    public Person(String firstName, String lastName, Long id) {
+        super(id);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     @Column(name = "first_name")
     private String firstName;
 
